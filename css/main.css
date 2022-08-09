@@ -1,0 +1,126 @@
+.icons-menu{
+    margin: 10px;
+}
+
+.first-header{
+    display: flex;
+    flex-wrap: row;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+.first-header-start >a{
+    color: white;
+    text-decoration: none;
+}
+.first-header-start{
+    margin: 20px;
+    width: 50%;
+    font-size: 13px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.second-header-start{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin: 12px 20px 0px 0px;
+}
+.second-header-start >a{
+    padding: 5px 0px 5px 20px;
+    color: white;
+}
+
+.first-header-start > a{
+    margin: 25px;
+}
+.first-header-start > a >i{
+    margin-right: 20px;
+}
+.breadcrumb{
+    text-decoration: none;
+    color: black;
+}
+.nav-medium{
+    width: 16%;
+    margin-left: 190px;
+    padding-bottom: 30px;
+}
+
+.btn-group{
+    margin-top: 30px;
+}
+.btn-group > button{
+    font-size: 15px;
+    color: rgb(26, 25, 25);
+}
+.btn-group > button{
+    font-size: 15px;
+    color: rgb(26, 25, 25);
+}
+.price-filter > h3{
+    font: bold;
+    color: black;
+}
+
+.rangeInpunts>input{
+    width: 40%;
+}
+.rangeInpunts > span{
+    width: 10%;
+    padding: 5px;
+    background-color: rgb(31, 231, 154);
+}
+.sizeValues{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0;
+}
+.sizeValues>li{
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid rgb(238, 231, 231);
+    margin: 5px 0px 0px 5px;
+}
+.sizeValues >li:active{
+    background-color: greenyellow;
+}
+.sizeValues :hover{
+    cursor:pointer;
+}
+.selectSizes >h4{
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.listPicker{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0;
+}
+.listPicker>li >span >input{
+    padding: auto;
+    margin-top: 15px;
+}
+
+.card-text{
+    color: rgb(26, 204, 26);
+}
+.card-title{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.card{
+    border: none;
+}
