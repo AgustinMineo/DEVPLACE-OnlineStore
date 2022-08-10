@@ -78,21 +78,20 @@
     list-style-type: none;
     height: auto;
     width: auto;
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 .sizeValues>li{
     height: auto;
-    margin: auto;
     padding: 15px;
     border: 1px solid rgb(238, 231, 231);
     margin: 5px 0px 0px 5px;
-}
-.sizeValues >li:active{
-    background-color: greenyellow;
+    width: auto;
+    color: rgb(155, 155, 156);
 }
 .sizeValues :hover{
     cursor:pointer;
+    background-color: greenyellow;
 }
 .selectSizes >h4{
     margin-bottom: 25px;
@@ -246,12 +245,17 @@
 }
 .last-footer{
     position:absolute;
-    bottom: -1845px;
+    bottom: -1875px;
     width: 100%;
 }
+
 .footer-style >li >a{
     text-decoration: none;
     color: black;
+}
+.footer-style >li > a >i{
+    padding-right: 10px;
+    margin-top: 10px;
 }
 .footer-style >li{
  margin: 10px 0px 10px 0px;
@@ -299,5 +303,7 @@
     height: 70px;
     width: 140px;
     font-size: 15px;
-    
+}
+.carousel{
+    width: 85%;
 }
