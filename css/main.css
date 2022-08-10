@@ -119,8 +119,155 @@
 }
 .card-title{
     font-size: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .card{
     border: none;
+}
+.shortBy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    position: absolute;
+    left: 470px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    align-items: center;
+}
+.dropdown{
+    margin-left:630px;
+    background-color: white;
+    height: 25px;
+    font-size: 15px;
+    width: auto;
+    border: none;
+}
+.dropdown .dropdown-toggle{
+    border: none;
+    background-color: white;
+    padding: 0px 30px 0px 50px;
+}
+.mainCards{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    left: 470px;
+    top: 280px;
+}
+.mainCards .container{
+    margin: 0;
+    padding: 0;
+}
+.border-buttom{
+    border: 1px solid rgb(175, 173, 173);
+}
+.border-buttom >i{
+    margin-right: 5px;
+}
+.buttomCards{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.buttom-class{
+    margin-left: 10px;
+}
+.categoryItem >h6{
+    margin: 0px 0px 20px 0px;
+    font-size: 12px;
+    color: rgb(175, 173, 173);
+}
+.stars{
+    margin-bottom: 15px;
+}
+.stars .checked{
+    color: orange;
+}
+.pagination-principal{
+    position: absolute;
+    display: flex;
+    bottom: -1500px;
+    left: 470px;
+    width: 60%;
+    border: 1px solid rgb(230, 225, 225);
+}
+.pagination >li{
+    border: none;
+}
+.pagination-principal .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pre-footer{
+    position: absolute;
+    bottom: -1600px;
+    width: 100%;
+}
+.pre-footer .row {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgb(224, 219, 219);
+    border-top: 1px solid rgb(224, 219, 219);
+}
+.icons-prefooter{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(224, 219, 219);
+    height: 40px;
+    border: none;
+}
+.icons-prefooter > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 10%;
+  text-decoration: none;
+  height: 30px;
+  color: gray;
+}
+.text-prefooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.text-prefooter >span >h6{
+    margin: 0;
+    padding: 0;
+}
+.last-footer{
+    position:absolute;
+    bottom: -1845px;
+    width: 100%;
+}
+.footer-style >li >a{
+    text-decoration: none;
+    color: black;
+}
+.footer-style >li{
+ margin: 10px 0px 10px 0px;
+}
+.icon-LastFooter{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.icon-LastFooter > span{
+    width: 5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.text-LastFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
