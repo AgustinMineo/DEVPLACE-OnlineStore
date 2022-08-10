@@ -183,6 +183,9 @@
 .stars .checked{
     color: orange;
 }
+.heart-checked:hover{
+    color: red;
+}
 .pagination-principal{
     position: absolute;
     display: flex;
