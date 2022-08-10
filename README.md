@@ -1,1 +1,0 @@
-# DEVPLACE-OnlineStore
