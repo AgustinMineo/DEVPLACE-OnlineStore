@@ -307,3 +307,54 @@
 .carousel{
     width: 85%;
 }
+
+
+/*
+  @media only screen and (min-width: 480px) {
+    body {
+      
+    }
+  }
+  @media only screen and (min-width: 768) {
+    body {
+      
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    body {
+      
+    }
+  }
+  @media only screen and (min-width: 1700px) and (max-width: 1980px) {
+    .nav-medium {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }*/
+  @media only screen and (min-width: 1681px) {
+    .breadcrumb-class {
+      margin-right: 405px;
+    }
+    .shortBy{
+        width: 60%;
+        margin-left: 50px;
+        padding-top: 10px;
+    }
+    
+    .mainCards .container{
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .pagination-principal{
+        position: absolute;
+        bottom: -1600px;
+    }
+    .pre-footer{
+        position: absolute;
+        bottom: -1680px;
+    }
+    .last-footer{
+        position: absolute;
+        bottom: -1960px;
+    }
+  }
