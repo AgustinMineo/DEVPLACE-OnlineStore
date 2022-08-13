@@ -75,7 +75,6 @@
     </nav>
     <div class="container mt-5 breadcrumb-class">
       <nav style="--bs-breadcrumb-divider: '>'">
-        <!--Cambiar el icono de un / por default a un >-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="" class="breadcrumb">Home</a>
@@ -106,10 +105,11 @@
       </div>
     </div>
     <div class="mainCards">
+      <span class="product-title"><h1>PRODUCTOS</h1></span>
       <div class="container">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 carousel-img">
               <div id="carousel-Indicators-4" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-Indicators-4">
                   <button type="button" data-bs-target="#carousel-Indicators-4" data-bs-slide-to="0" class="active visually-hidden" aria-current="true" aria-label="Slide 1"></button>
@@ -159,7 +159,7 @@
       <div class="container">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 carousel-img">
               <div id="carousel-Indicators-5" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-Indicators-5">
                   <button type="button" data-bs-target="#carousel-Indicators-5" data-bs-slide-to="0" class="active visually-hidden" aria-current="true" aria-label="Slide 1"></button>
@@ -209,7 +209,7 @@
       <div class="container">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 carousel-img">
               <div id="carousel-Indicators-6" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-Indicators-6">
                   <button type="button" data-bs-target="#carousel-Indicators-6" data-bs-slide-to="0" class="active visually-hidden" aria-current="true" aria-label="Slide 1"></button>
@@ -259,7 +259,7 @@
       <div class="container">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 carousel-img">
               <div id="carousel-Indicators-7" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-Indicators-7" data-bs-slide-to="0" class="active visually-hidden" aria-current="true" aria-label="Slide 1"></button>
@@ -309,7 +309,7 @@
       <div class="container">
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 carousel-img">
               <div id="carousel-Indicators-8" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-Indicators-8" data-bs-slide-to="0" class="active visually-hidden" aria-current="true" aria-label="Slide 1"></button>
@@ -361,15 +361,15 @@
     <div class="nav-medium">
       <h3>Categories</h3>
       <div class="row row-cols-1 categories">
-        <div class="col-1">
+        <div class="col-1 category">
           <div class="btn-group">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed personal-class" type="button" data-bs-toggle="collapse" data-bs-target="#Accessories-collapseThree" aria-expanded="false" aria-controls="Accessories-collapseThree">
+              <button class="accordion-button collapsed personal-class " type="button" data-bs-toggle="collapse" data-bs-target="#Accessories-collapseThree" aria-expanded="false" aria-controls="Accessories-collapseThree">
                 Accessories (15)
               </button>
             </h2>
-            <div id="Accessories-collapseThree" class="accordion-collapse collapse" aria-labelledby="Accessories-headingThree" data-bs-parent="#accordionFlushExample">
+            <div id="Accessories-collapseThree" class="accordion-collapse collapse " aria-labelledby="Accessories-headingThree" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body acordeonGeneral">
                 <ul class="categories-ul">
                   <li>Accessories (1)</li>
@@ -532,7 +532,7 @@
         </ul>
     </div>
     <span><hr></span>
-    <div class="container">
+    <div class="container pickerColor">
       <h4>COLORS</h4>
       <div class="colorPicker">
         <ul class="listPicker">
@@ -555,11 +555,11 @@
       </div>
     </div>
     <span><hr></span>
-    <div class="cointainer">
+    <div class="cointainer top-rated">
       <h3>TOP RATED</h3>
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 rated-img">
             <div id="carousel-Indicators-1" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-Indicators-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -587,7 +587,7 @@
               </button>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 rated-description">
             <div class="card-body">
               <h5 class="card-title">Casual men wearing cool shoe</h5>
               <p class="card-text">$250.00</p>
@@ -597,7 +597,7 @@
       </div>
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 rated-img">
             <div id="carousel-Indicators-2" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-Indicators-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -625,7 +625,7 @@
               </button>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 rated-description">
             <div class="card-body">
               <h5 class="card-title">Casual men wearing cool shoe</h5>
               <p class="card-text">$250.00</p>
@@ -635,7 +635,7 @@
       </div>
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 rated-img">
             <div id="carousel-Indicators-3" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-Indicators-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -663,7 +663,7 @@
               </button>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 rated-description">
             <div class="card-body">
               <h5 class="card-title">Casual men wearing cool shoe</h5>
               <p class="card-text">$250.00</p>
@@ -673,7 +673,7 @@
       </div>
     </div>
     <span><hr></span>
-    <div class="container px-0">
+    <div class="container px-0 add-img">
       <img src="https://picsum.photos/seed/picsum/253/200" alt="IMAGEN">
     </div>
   </div>
@@ -702,8 +702,6 @@
   </div>
   <div class="pre-footer">
     <div class="row">
-      <div class="col-1 me-1">
-      </div>
           <div class="col-6 text-prefooter">
             <span><h6>We´re consident we´ve provided all the best for you. Stay connect with us</h6></span>
           </div>
@@ -719,10 +717,10 @@
     </div>
   </div>
 <footer class="last-footer">
-  <div class="container mb-3">
+  <div class="container mb-3 ">
     <section>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+      <div class="row footer-container">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-information">
           <h5 class="text-uppercase">INFORMATION</h5>
           <ul class="list-unstyled mb-0 footer-style">
             <li>
@@ -742,9 +740,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-information">
           <h5 class="text-uppercase">MY ACCOUNT</h5>
-
           <ul class="list-unstyled mb-0 footer-style">
             <li>
               <a href="#">Sign In</a>
@@ -763,9 +760,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-information">
           <h5 class="text-uppercase">HELP</h5>
-
           <ul class="list-unstyled mb-0 footer-style">
             <li>
               <a href="#">F.A.Q.</a>
@@ -781,7 +777,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 footer-information">
           <h5 class="text-uppercase">CONTACT INFO</h5>
           <ul class="list-unstyled mb-0 footer-style">
             <li>
@@ -798,7 +794,7 @@
       </div>
     </section>
   </div>
-  <div class="mw-100">
+  <div class="mw-100 copyright">
     <div class="row bg-dark mx-0 px-0">
       <div class="col-6 text-muted text-LastFooter">
         Copyright 2017 all right reserved - Design by 

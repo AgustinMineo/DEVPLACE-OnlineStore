@@ -161,6 +161,9 @@
     margin: 0;
     padding: 0;
 }
+.product-title{
+    display: none;
+}
 .border-buttom{
     border: 1px solid rgb(175, 173, 173);
 }
@@ -312,6 +315,7 @@
     width: 85%;
 }
 
+
   @media only screen and (max-width: 480px) {
     body {
       display: flex;
@@ -342,7 +346,6 @@
         padding: 0;
         width: auto;
     }
-    
     .main-nav > .navbar{
         width: auto;
         margin: 0;
@@ -369,29 +372,118 @@
         display: none;
     }
     .categories{
+        display: flex;
+        flex-wrap: nowrap;
         width: auto;
         padding: 0;
         margin: 0;
-        background-color: black;
     }
-    .categories  .btn-group{
+    .category{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .personal-class{
+        font-size: 13px;
         height: auto;
         width: auto;
-        margin: 0;
-        padding: 0;
+    }
+    .price-filter{
+        width: auto;
+    }
+    .price-filter >h5{
+        text-align: center;
+        width: auto;
+        font-size: 15px;
+    }
+    .price-filter .rangeInpunts{
+        width: auto;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .rangeInpunts >input{
+        margin: 3px;
+    }
+    .price-filter .rangeInpunts >span{
+        margin-left: 5px;
+    }
+    .selectSizes >h4{
+        text-align: center;
+        font-size: 20px;
+    }
+    .sizeValues{
+        width: auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .personal-class{
-        font-size: 10px;
-        height: auto;
+    .pickerColor >h4{
+        text-align: center;
+        font-size: 20px;
+    }
+    .colorPicker{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .listPicker {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .listPicker .nav-item{
+        display: flex;
+        flex-wrap: wrap;
+        width:25%;
+        font-size: 18px;
+    }
+    .sizeValues .nav-item{
         width: auto;
+        height: auto;
     }
     .icons-menu{
     position: absolute;
-    left: 230px;
+    left: 229px;
     top: 0px;
     }
+    .top-rated{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-rated>h3{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .top-rated .card{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+    .rated-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rated-description{
+        text-align: center;
+    }
+    .add-img{
+        display: none;
+    }
+
     .shortBy{
         display: none;
     }
@@ -408,14 +500,76 @@
         justify-content: center;
     }
     .mainCards{
-        display: none;
+        position: absolute;
+        left: 1px;
+        top: 2180px;
+        width: 100%;
+    }
+    .product-title{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 20px 20px 0px;
+    }
+    .product-title >h1{
+        font-size: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+    .carousel-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5px;
+    }
+    .card-title{
+        width: 100%;
+        text-align: center;
+    }
+    .card-text{
+        width: 100%;
+        text-align: center;
+    }
+    .stars{
+        width: 100%;
+        text-align: center;
+    }
+    .card-body{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
     .pre-footer{
-        display: none;
+       display: none;
     }
     .last-footer{
-        display: none;
+    position: absolute;
+    bottom: -5750px;
     }
+
+    .footer-information{
+       background-color: aqua;
+       font-size: 10px;
+        text-align: center;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-information >h5{
+        font-size: 12px;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+      
   }
   /*
   @media only screen and (min-width: 768) {
@@ -447,6 +601,9 @@
     .mainCards .container{
         padding-left: 50px;
         padding-top: 20px;
+    }
+    .product-title{
+        display: none;
     }
     .pagination-principal{
         position: absolute;
