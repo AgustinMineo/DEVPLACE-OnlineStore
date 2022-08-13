@@ -72,6 +72,10 @@
     padding: 5px;
     background-color: rgb(31, 231, 154);
 }
+.rangeInpunts > span >button{
+    background-color: rgb(31, 231, 154);
+    border: none;
+}
 .sizeValues{
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +87,7 @@
 }
 .sizeValues>li{
     height: auto;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid rgb(238, 231, 231);
     margin: 5px 0px 0px 5px;
     width: auto;
@@ -299,22 +303,121 @@
 .personal-class{
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    height: 70px;
-    width: 140px;
+    padding: 2px;
+    height: 60px;
+    width: 135px;
     font-size: 15px;
 }
 .carousel{
     width: 85%;
 }
 
-
-/*
-  @media only screen and (min-width: 480px) {
+  @media only screen and (max-width: 480px) {
     body {
-      
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-class{
+        display: none;
+    }
+    .first-header{
+        display: flex;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-header-start{
+        display: none;
+    }
+    .second-header-start{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-medium{
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+    
+    .main-nav > .navbar{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .main-nav{
+        padding: 0;
+        margin: 0;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu >ul{
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .pagination-principal{
+        display: none;
+    }
+    .categories{
+        width: auto;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+    .categories  .btn-group{
+        height: auto;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .personal-class{
+        font-size: 10px;
+        height: auto;
+        width: auto;
+    }
+    .icons-menu{
+    position: absolute;
+    left: 230px;
+    top: 0px;
+    }
+    .shortBy{
+        display: none;
+    }
+    .nav-medium{
+        display: flex;
+        flex-flow: column;
+        width: auto;
+    }
+    .nav-medium > h3{
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainCards{
+        display: none;
+    }
+    .pre-footer{
+        display: none;
+    }
+    .last-footer{
+        display: none;
     }
   }
+  /*
   @media only screen and (min-width: 768) {
     body {
       
