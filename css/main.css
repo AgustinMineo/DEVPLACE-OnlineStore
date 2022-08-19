@@ -1,7 +1,6 @@
 .icons-menu{
     margin: 10px;
 }
-
 .first-header{
     display: flex;
     flex-wrap: row;
@@ -316,7 +315,7 @@
 }
 
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 460px) {
     body {
       display: flex;
       flex-wrap: wrap;
@@ -483,7 +482,9 @@
     .add-img{
         display: none;
     }
-
+    .categoryItem{
+        margin-left: 15px;
+    }
     .shortBy{
         display: none;
     }
@@ -502,7 +503,7 @@
     .mainCards{
         position: absolute;
         left: 1px;
-        top: 2180px;
+        top: 2305px;
         width: 100%;
     }
     .product-title{
@@ -525,7 +526,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding-left: 5px;
+        margin-left: 30px;
     }
     .card-title{
         width: 100%;
@@ -550,11 +551,10 @@
     }
     .last-footer{
     position: absolute;
-    bottom: -5750px;
+    bottom: -5450px;
     }
 
     .footer-information{
-       background-color: aqua;
        font-size: 10px;
         text-align: center;
         width: 25%;
@@ -569,7 +569,12 @@
         flex-wrap: nowrap;
         width: auto;
     }
-      
+      .text-LastFooter{
+        font-size: 8px;
+      }
+      .icon-LastFooter >span{
+        margin-left:12px;
+      }
   }
   /*
   @media only screen and (min-width: 768) {
