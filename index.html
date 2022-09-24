@@ -31,7 +31,7 @@
       </div>
     </ul>
   </div>
-  <div class="container-fuid main-nav">
+  <div class="container-fuid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mx-0 border-bottom border-darklight">
       <div class="container-fluid main-nav">
         <a class="navbar-brand" href="#"><span style="color: rgb(15, 245, 15); margin-left: 25px;">RENOSHOP</span>BEE</a>
@@ -61,13 +61,21 @@
             </li>
           </ul>
             <div class="icons-menu">
-              <a href="#" class="btn position-relative mx-2"><i class="fa-solid fa-cart-shopping"></i>
-                
-                <span class="badge bg-success position-absolute top-0 start-120 rounded-pill"><div id="cantProducts">0</div></span>
-              </a>
-              <span class="icons-menu"><i class="fa-solid fa-magnifying-glass"></i></span>
-              <span class="icons-menu"><i class="fa-solid fa-bars"></i></span>
+                <li class="nav-item dropdown d-block bg-light" >
+                  <a class="nav-link active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <span style="color: Black;"><i class="fa-solid fa-cart-shopping"></i></span>
+                      <span class="badge bg-success position-absolute top-0 start-120 rounded-pill"><div id="cantProducts">0</div></span> 
+                    </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" id="shopCart">           
+                        </a></li>
+                        <div id="totalValue"></div>
+                        <button class="btn btn-danger px-5 align-items-center" id="deleteAllButton" onclick="deleteAll()">DELETE ALL</button>
+                      </ul>
+                </li>
             </div>
+            <span class="icons-menu"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="icons-menu"><i class="fa-solid fa-bars"></i></span>
         </div>
       </div>
     </nav>
@@ -145,7 +153,7 @@
                 <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est rerum sint excepturi iusto ea, possimus quaerat quo quas eos optio at laudantium tenetur consectetur nam qui ducimus provident saepe!</small></p>
                 <span class="categoryItem"><h6>Shoes, T-Shirt teen</h6></span>
                 <div class="buttomCards">
-                  <button type="button" class="btn border-buttom" onclick="buyItem(); " > <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                  <button type="button" class="btn border-buttom" onclick="buyItem(1); " > <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
                   <button type="button" class="btn border-buttom buttom-class" onclick="animate__heartBeat"> <i class="fa-regular fa-heart heart-checked "></i></button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-solid fa-retweet"></i></button>
                 </div>
@@ -188,14 +196,14 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Treatise on the</h5>
-                <p class="card-text">$250.00</p>
+                <p class="card-text">$300.00</p>
                 <div class="stars">
                   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><i class="fa-regular fa-star"></i>
                 </div>
                 <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est rerum sint excepturi iusto ea, possimus quaerat quo quas eos optio at laudantium tenetur consectetur nam qui ducimus provident saepe!</small></p>
                 <span class="categoryItem"><h6>Shoes, T-Shirt teen </h6></span>
                 <div class="buttomCards">
-                  <button type="button" class="btn border-buttom"onclick="buyItem();"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                  <button type="button" class="btn border-buttom"onclick="buyItem(2);"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
                   <button type="button" class="btn border-buttom buttom-class" > <i class="fa-regular fa-heart heart-checked"></i></button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-solid fa-retweet"></i></button>
                 </div>
@@ -238,14 +246,14 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Treatise on the</h5>
-                <p class="card-text">$250.00</p>
+                <p class="card-text">$350.00</p>
                 <div class="stars">
                   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><i class="fa-regular fa-star"></i>
                 </div>
                 <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est rerum sint excepturi iusto ea, possimus quaerat quo quas eos optio at laudantium tenetur consectetur nam qui ducimus provident saepe!</small></p>
                 <span class="categoryItem"><h6>Shoes, T-Shirt teen</h6></span>
                 <div class="buttomCards">
-                  <button type="button" class="btn border-buttom " onclick="buyItem();"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                  <button type="button" class="btn border-buttom " onclick="buyItem(3);"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-regular fa-heart heart-checked"></i></button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-solid fa-retweet"></i></button>
                 </div>
@@ -288,14 +296,14 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Treatise on the</h5>
-                <p class="card-text">$250.00</p>
+                <p class="card-text">$400.00</p>
                 <div class="stars">
                   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><i class="fa-regular fa-star"></i>
                 </div>
                 <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est rerum sint excepturi iusto ea, possimus quaerat quo quas eos optio at laudantium tenetur consectetur nam qui ducimus provident saepe!</small></p>
                 <span class="categoryItem"><h6>Shoes, T-Shirt teen</h6></span>
                 <div class="buttomCards">
-                  <button type="button" class="btn border-buttom" onclick="buyItem();"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                  <button type="button" class="btn border-buttom" onclick="buyItem(4);"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-regular fa-heart heart-checked"></i></button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-solid fa-retweet"></i></button>
                 </div>
@@ -338,14 +346,14 @@
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">Treatise on the</h5>
-                <p class="card-text">$250.00</p>
+                <p class="card-text">$450.00</p>
                 <div class="stars">
                   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><i class="fa-regular fa-star"></i>
                 </div>
                 <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est rerum sint excepturi iusto ea, possimus quaerat quo quas eos optio at laudantium tenetur consectetur nam qui ducimus provident saepe!</small></p>
                 <span class="categoryItem"><h6>Shoes, T-Shirt teen</h6></span>
                 <div class="buttomCards">
-                  <button type="button" class="btn border-buttom " onclick="buyItem();"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
+                  <button type="button" class="btn border-buttom " onclick="buyItem(5);"> <i class="fa-solid fa-cart-shopping"></i>ADD TO CART</button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-regular fa-heart heart-checked"></i></button>
                   <button type="button" class="btn border-buttom buttom-class"> <i class="fa-solid fa-retweet"></i></button>
                 </div>
@@ -492,7 +500,7 @@
           </div>
         </div>
       </div>
-      <span><hr></span>
+      <div class="lines"><hr></div>
       <div class="price-filter">
         <h5>PRICE FILTER</h5>
         <input type="range" class="form-range"  id="customRange">
@@ -502,7 +510,7 @@
           <span><button type="button"><i class="fa-solid fa-magnifying-glass"></i></button></span>
         </div>
     </div>
-    <span><hr></span>
+    <div class="lines"><hr></div>
     <div class="selectSizes">
       <h4>SIZE</h4>
         <ul class="sizeValues">
@@ -529,7 +537,7 @@
           </li>
         </ul>
     </div>
-    <span><hr></span>
+    <div class="lines"><hr></div>
     <div class="container pickerColor">
       <h4>COLORS</h4>
       <div class="colorPicker">
@@ -552,7 +560,7 @@
         </ul>
       </div>
     </div>
-    <span><hr></span>
+    <div class="lines"><hr></div>
     <div class="cointainer top-rated">
       <h3>TOP RATED</h3>
       <div class="card mb-3" style="max-width: 540px;">
@@ -670,7 +678,7 @@
         </div>
       </div>
     </div>
-    <span><hr></span>
+    <div class="lines"><hr></div>
     <div class="container px-0 add-img">
       <img src="https://picsum.photos/seed/picsum/253/200" alt="IMAGEN">
     </div>
