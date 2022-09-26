@@ -131,8 +131,8 @@ function showProducts(){
           <div class="card-body">
               <h5 class="card-title">${product.nombre}</h5>
             <p class="card-text">Descripcion: ${product.descripcion}</p>
-            <p class="card-text">Precio $${product.precio}</p>
-            <p class="card-text">Cantidad ${product.cantidad}</p>
+            <p class="card-text">Precio : $${product.precio}</p>
+            <p class="card-text">Cantidad : ${product.cantidad}</p>
             <button class="btn btn-danger px-5" onclick="deleteProduct(${product.id})">-</button>
             <button class="btn btn-success px-5" onclick="newProduct(${product.id})">+</button>
             </div>
